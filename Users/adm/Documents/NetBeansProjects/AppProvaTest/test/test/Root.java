@@ -30,6 +30,7 @@ public class Root {
     @Test
     public void testeLab() {
         CasoTesteProfessor.run();
-        //CasoTesteAluno.run();
+        CasoTesteAluno.run();
+        //teste
     }
 }
