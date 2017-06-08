@@ -27,9 +27,13 @@ public class Root {
     public static void tearDownClass() {
     }
 
+    /**
+     *
+     * @param args
+     */
     @Test
     //public void testeLab() {
-    public static void mainOLD(String[] args) {
+    public static void main(String[] args) {
         CasoTesteProfessor.run();
         CasoTesteAluno.run();
     }
