@@ -31,6 +31,5 @@ public class Root {
     public void testeLab() {
         CasoTesteProfessor.run();
         CasoTesteAluno.run();
-        //teste
     }
 }
