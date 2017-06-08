@@ -28,7 +28,8 @@ public class Root {
     }
 
     @Test
-    public void testeLab() {
+    //public void testeLab() {
+    public static void mainOLD(String[] args) {
         CasoTesteProfessor.run();
         CasoTesteAluno.run();
     }
