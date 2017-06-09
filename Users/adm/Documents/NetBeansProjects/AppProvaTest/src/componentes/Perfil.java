@@ -7,6 +7,7 @@
 package componentes;
 
 import classes.Objetos;
+import classes.Passed;
 import classes.Verificar;
 import static junit.framework.Assert.fail;
 import org.openqa.selenium.WebDriver;
@@ -48,7 +49,8 @@ public class Perfil {
             Verificar.check(driver, "xpath", ".//*[@id='welcome-box']/h1", 0).getText().
                     contains("Complete seu perfil para fazer o simulado");
             Objetos.App_Prova.Simulados.buttonSalvar(driver).click();
-            Thread.sleep(5000);            
+            Thread.sleep(5000); 
+            System.out.println("componentes.Perfil.preencher passou");          
         } catch(Exception ex){
             System.out.println(ex.getStackTrace());
             //fail(ex.getMessage());

@@ -7,6 +7,7 @@
 package componentes;
 
 import classes.Objetos;
+import classes.Passed;
 import classes.Verificar;
 import static junit.framework.Assert.fail;
 import org.openqa.selenium.WebDriver;
@@ -30,6 +31,7 @@ public class Atividade {
             Verificar.check(driver, "className","main", 0).getText().
                     contains("Resultado do Simulado");
             Thread.sleep(5000);
+            System.out.println("componentes.Atividade,Iniciar passou");
         } catch(Exception ex){
             System.out.println(ex.getStackTrace());
             //fail(ex.getMessage());

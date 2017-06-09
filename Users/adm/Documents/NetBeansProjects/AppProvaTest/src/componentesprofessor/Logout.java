@@ -7,6 +7,7 @@
 package componentesprofessor;
 
 import classes.Objetos;
+import classes.Passed;
 import classes.Verificar;
 import static junit.framework.Assert.fail;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +22,7 @@ public class Logout {
             Objetos.AppProvaProfessor.Logout.linkSair(driver).click();
             Verificar.check(driver, "className", "logo", 0);
             driver.quit();
+            System.out.println("componentesprofessor.Logout.sair passou");           
         } catch(Exception ex){
             System.out.println(ex.getStackTrace());
             //fail(ex.getMessage());

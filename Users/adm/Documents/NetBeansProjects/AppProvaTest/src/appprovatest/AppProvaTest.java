@@ -20,7 +20,7 @@ public class AppProvaTest {
      */
     public static void main(String[] args) {
         CasoTesteProfessor.run();
-        CasoTesteAluno.run();  
+        CasoTesteAluno.run();
     }
     
 }

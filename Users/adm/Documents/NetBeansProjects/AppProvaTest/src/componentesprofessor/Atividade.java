@@ -8,6 +8,7 @@ package componentesprofessor;
 
 import classes.DataHoje;
 import classes.Objetos;
+import classes.Passed;
 import classes.Verificar;
 import static junit.framework.Assert.fail;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +23,7 @@ public class Atividade {
             Verificar.check(driver, "className", "home-overview__item-icon", 0);
             Objetos.AppProvaProfessor.Inicio.buttonSimuladosEscola(driver).click();                                    
             Verificar.check(driver, "className", "breadcrumb", 0).getText().contains("Simulados");
-
+            System.out.println("componentesprofessor.Atividade.acessar passou");
         } catch(Exception ex){
             //System.out.println(ex.getMessage());
             fail(ex.getMessage());
@@ -74,7 +75,7 @@ public class Atividade {
             //Objetos.AppProvaProfessor.NovoSimulado.buttonHoraQuadro(driver, "23").click();
             
             Objetos.AppProvaProfessor.NovoSimulado.buttonSalvarComoRascunho(driver).click();
-
+            System.out.println("componentesprofessor.Atividade.cadastrar passou");
         } catch(Exception ex){
             System.out.println(ex.getStackTrace());
             //fail(ex.getMessage());

@@ -7,6 +7,7 @@
 package componentesprofessor;
 
 import classes.Objetos;
+import classes.Passed;
 import classes.Verificar;
 import componentes.Usuario;
 import static junit.framework.Assert.fail;
@@ -26,7 +27,7 @@ public class Professor {
             Objetos.AppProvaProfessor.TelaInicial.buttonEntrar(driver).click();
                                     
             Verificar.check(driver, "className", "breadcrumb", 0).getText().contains("Início");
-
+            System.out.println("componentesprofessor.Professor.logar passou");
         } catch(Exception ex){
             System.out.println(ex.getStackTrace());
             //fail(ex.getMessage());

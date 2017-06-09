@@ -7,6 +7,7 @@
 package componentes;
 
 import classes.Objetos;
+import classes.Passed;
 import classes.Verificar;
 import static junit.framework.Assert.fail;
 import org.openqa.selenium.WebDriver;
@@ -36,7 +37,7 @@ public class Usuario {
             
             Verificar.check(driver, "id", "start-header", 0).getText().
                     contains("Escolha uma maneira de jogo");
-
+            System.out.println("componentes.Usuario.Cadastrar passou");
         } catch(Exception ex){
             System.out.println(ex.getStackTrace());
             //fail(ex.getMessage());
@@ -53,6 +54,7 @@ public class Usuario {
             Objetos.App_Prova.TelaInicial.buttonEntrar(driver).click();
             Verificar.check(driver, "id", "start-header", 0).getText().
                     contains("Escolha uma maneira de jogo");
+            System.out.println("componentes.Usuario.logar passou");
         } catch(Exception ex){
             //System.out.println(ex.getMessage());
             fail(ex.getMessage());
