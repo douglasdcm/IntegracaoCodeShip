@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test;
+//package test;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -32,8 +32,8 @@ public class Root {
      * @param args
      */
     @Test
-    //public void testeLab() {
-    public static void main(String[] args) {
+    public void testeLab() {
+    //public static void main(String[] args) {
         CasoTesteProfessor.run();
         CasoTesteAluno.run();
     }
