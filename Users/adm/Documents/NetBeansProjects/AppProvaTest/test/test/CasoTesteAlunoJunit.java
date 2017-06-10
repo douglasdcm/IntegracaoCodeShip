@@ -5,7 +5,7 @@
  */
 package test;
 
-import classes.Start;
+import classes.StartFireFox;
 import componentes.Atividade;
 import componentes.Logout;
 import componentes.Perfil;
@@ -58,7 +58,7 @@ public class CasoTesteAlunoJunit {
         String escola = regiao[i][0];
         String serie = "EAD";
 
-        WebDriver driver = Start.myDriver("http://mobile.stg.appprova.com.br/users/sign_in");
+        WebDriver driver = StartFireFox.myDriver("http://mobile.stg.appprova.com.br/users/sign_in");
         
         Usuario.cadastrar(driver, nome, email, senha);
         Simulado.Iniciar(driver, simulado);

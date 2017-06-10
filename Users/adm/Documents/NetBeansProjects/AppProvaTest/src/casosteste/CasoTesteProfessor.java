@@ -6,7 +6,8 @@
 
 package casosteste;
 
-import classes.Start;
+import classes.StartChrome;
+import classes.StartFireFox;
 import componentesprofessor.Atividade;
 import componentesprofessor.Logout;
 import componentesprofessor.Professor;
@@ -26,7 +27,7 @@ public class CasoTesteProfessor {
         String disciplina = tema[0][0];
         String conteudo = tema[0][1];         
                 
-        WebDriver driver = Start.
+        WebDriver driver = StartFireFox.
                 myDriver("http://professor.mobile.stg.appprova.com.br/teachers/sign_in");
         
         Professor.logar(driver, "qa@appprova.com.br", "loveqaatappprova");
