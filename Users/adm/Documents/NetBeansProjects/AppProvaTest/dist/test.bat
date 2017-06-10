@@ -1,1 +1,0 @@
-echo "arquivo teste passou"
